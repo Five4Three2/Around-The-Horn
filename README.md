@@ -13,7 +13,7 @@ The project combines real-world hardware with practical network and systems engi
 
 *Logical overview of the ATH environment. Sensitive addressing, VLAN identifiers, hostnames, credentials, and detailed security configurations are intentionally excluded from this public repository.*
 
-> ## Project Goals
+## Project Goals
 
 Around-The-Horn is being developed with several long-term goals:
 
@@ -72,10 +72,20 @@ ATH combines physical infrastructure with virtualization and self-hosted softwar
 
 Detailed documentation is maintained throughout the repository as ATH is designed, deployed, tested, and expanded.
 
+### Architecture & Design
+
 - [Architecture Overview](docs/architecture/overview.md) — High-level overview of the ATH environment, infrastructure layers, project goals, and design philosophy.
 - [Network Architecture](docs/network/network-architecture.md) — Network design, core connectivity, segmentation strategy, remote access approach, physical infrastructure, and security considerations.
+- [Security Design](docs/security/security-design.md) — Current and planned security controls, access management, segmentation strategy, data protection, and infrastructure hardening.
 
-Additional documentation will be added as each phase of the project is implemented and tested.
+### Build Logs
+
+- [Build Log 01 — Initial Infrastructure](docs/build-log/01-initial-infrastructure.md)
+- [Build Log 02 — Network Deployment & Troubleshooting](docs/build-log/02-network-deployment.md)
+- [Build Log 03 — Proxmox & Linux Deployment](docs/build-log/03-proxmox-linux-deployment.md)
+- [Build Log 04 — Jellyfin Deployment & Validation](docs/build-log/04-jellyfin-deployment.md)
+
+Additional documentation will be added as ATH evolves and new infrastructure, services, and security controls are implemented.
 
 ## Project Roadmap
 
