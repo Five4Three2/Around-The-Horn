@@ -1,0 +1,128 @@
+# ============================================================
+# Around-The-Horn (ATH)
+# Git Ignore Rules
+# ============================================================
+
+# ------------------------------------------------------------
+# Secrets / Credentials
+# NEVER commit passwords, API keys, tokens, or certificates
+# ------------------------------------------------------------
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+credentials/
+
+# ------------------------------------------------------------
+# Local Configuration
+# Machine-specific settings that should not be public
+# ------------------------------------------------------------
+config.local.*
+*.local.json
+*.local.yml
+*.local.yaml
+
+# ------------------------------------------------------------
+# Logs / Runtime Files
+# ------------------------------------------------------------
+*.log
+logs/
+*.pid
+*.pid.lock
+
+# ------------------------------------------------------------
+# Databases / Application Data
+# ------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+data/
+appdata/
+
+# ------------------------------------------------------------
+# Backups / Archives
+# ------------------------------------------------------------
+backups/
+backup/
+*.bak
+*.backup
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# ------------------------------------------------------------
+# Media
+# ATH documents the media-server architecture,
+# not the media stored on the server.
+# ------------------------------------------------------------
+media/
+downloads/
+movies/
+tv/
+music/
+photos/
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.mp3
+*.flac
+
+# ------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.Trash-*
+
+# ------------------------------------------------------------
+# IDE / Editor Files
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+# Temporary Files
+# ------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.cache
+
+# ------------------------------------------------------------
+# SSH Private Keys
+# NEVER commit private SSH keys
+# ------------------------------------------------------------
+.ssh/
+id_rsa
+id_ed25519
+
+# ------------------------------------------------------------
+# Docker / Containers
+# Keep compose files in GitHub, but not runtime data/secrets
+# ------------------------------------------------------------
+docker-data/
+volumes/
+.env.docker
