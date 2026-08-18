@@ -7,6 +7,12 @@ The project combines real-world hardware with practical network and systems engi
 
 > **Project Status:** 🚧 Active Development
 
+## Architecture Overview
+
+![Around-The-Horn Architecture Overview](diagrams/ath-architecture-overview.png)
+
+*Logical overview of the ATH environment. Sensitive addressing, VLAN identifiers, hostnames, credentials, and detailed security configurations are intentionally excluded from this public repository.*
+
 > ## Project Goals
 
 Around-The-Horn is being developed with several long-term goals:
